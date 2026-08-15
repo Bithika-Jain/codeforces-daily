@@ -1,7 +1,6 @@
-
 import java.util.Scanner;
 
-public class LuckyDivison {
+public class LuckyDivision {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -10,14 +9,20 @@ public class LuckyDivison {
         int[] luckyNumbers = {4, 7, 44, 47, 74, 77, 444, 447, 474, 477,
                               744, 747, 774, 777};
 
+        boolean found = false;
+
         for (int lucky : luckyNumbers) {
             if (n % lucky == 0) {
-                System.out.println("YES");
-                return;
+                found = true;
+                break;
             }
         }
 
-        System.out.println("NO");
+        if (found) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
+        }
 
         sc.close();
     }

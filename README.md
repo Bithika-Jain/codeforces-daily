@@ -3,7 +3,7 @@
 A repository containing daily Codeforces competitive programming solutions implemented in Java.
 
 ## Summary
-- **Total Problems Solved:** 28
+- **Total Problems Solved:** 36
 - **Language:** Java
 - **Tracking File:** [`Problems_Solved.txt`](Problems_Solved.txt)
 
@@ -41,3 +41,11 @@ A repository containing daily Codeforces competitive programming solutions imple
 | 26 | **677A** | Vanya and Fence | [`VanyaandFence.java`](VanyaandFence.java) | 6th August 2026 |
 | 27 | **271A** | Beautiful Year | [`BeautifulYear.java`](BeautifulYear.java) | 7th August 2026 |
 | 28 | **1030A** | In Search of an Easy Problem | [`InSearchofanEasyProblem.java`](InSearchofanEasyProblem.java) | 8th August 2026 |
+| 29 | **266B** | Queue at the School | [`QueueattheSchool.java`](QueueattheSchool.java) | 9th August 2026 |
+| 30 | **467A** | George and Accommodation | [`GeorgeandAccomodation.java`](GeorgeandAccomodation.java) | 10th August 2026 |
+| 31 | **58A** | Chat Room | [`ChatRoom.java`](ChatRoom.java) | 11th August 2026 |
+| 32 | **486A** | Calculating Function | [`CalculatingFunction.java`](CalculatingFunction.java) | 12th August 2026 |
+| 33 | **344A** | Magnets | [`Magnets.java`](Magnets.java) | 13th August 2026 |
+| 34 | **200B** | Drinks | [`Drinks.java`](Drinks.java) | 14th August 2026 |
+| 35 | **122A** | Lucky Division | [`LuckyDivision.java`](LuckyDivision.java) | 15th August 2026 |
+| 36 | **136A** | Presents | [`Presents.java`](Presents.java) | 16th August 2026 |

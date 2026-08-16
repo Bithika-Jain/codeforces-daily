@@ -31,4 +31,13 @@ S.No. | Codeforces ID | Problem Name                     | Date Solved
 26    | 677A          | Vanya and Fence                  | 6th August 2026
 27    | 271A          | Beautiful Year                   | 7th August 2026
 28    | 1030A         | In Search of an Easy Problem     | 8th August 2026
+29    | 266B          | Queue at the School              | 9th August 2026
+30    | 467A          | George and Accommodation         | 10th August 2026
+31    | 58A           | Chat Room                        | 11th August 2026
+32    | 486A          | Calculating Function             | 12th August 2026
+33    | 344A          | Magnets                          | 13th August 2026
+34    | 200B          | Drinks                           | 14th August 2026
+35    | 122A          | Lucky Division                   | 15th August 2026
+36    | 136A          | Presents                         | 16th August 2026
 ================================================================================
+

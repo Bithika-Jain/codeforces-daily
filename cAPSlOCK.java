@@ -8,7 +8,7 @@ public class cAPSlOCK {
 
         boolean change = true;
 
-        // Check from the second character
+        // Check if all characters except the first are uppercase
         for (int i = 1; i < s.length(); i++) {
             if (Character.isLowerCase(s.charAt(i))) {
                 change = false;
@@ -16,12 +16,18 @@ public class cAPSlOCK {
             }
         }
 
-        // If all except first are uppercase
         if (change) {
-            s = s.toLowerCase();
+            StringBuilder result = new StringBuilder();
 
-            // Make the first character uppercase
-            s = Character.toUpperCase(s.charAt(0)) + s.substring(1);
+            for (char ch : s.toCharArray()) {
+                if (Character.isUpperCase(ch)) {
+                    result.append(Character.toLowerCase(ch));
+                } else {
+                    result.append(Character.toUpperCase(ch));
+                }
+            }
+
+            s = result.toString();
         }
 
         System.out.println(s);

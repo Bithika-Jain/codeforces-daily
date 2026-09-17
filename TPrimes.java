@@ -1,6 +1,5 @@
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
 public class TPrimes {
     public static void main(String[] args) throws Exception {
@@ -9,23 +8,62 @@ public class TPrimes {
         int n = Integer.parseInt(br.readLine());
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        int police = 0;
-        int untreated = 0;
+        StringBuilder output = new StringBuilder();
 
-        for (int i = 0; i < n; i++) {
-            int event = Integer.parseInt(st.nextToken());
+        while (n-- > 0) {
+            long x = Long.parseLong(st.nextToken());
 
-            if (event == -1) {
-                if (police > 0) {
-                    police--;
-                } else {
-                    untreated++;
-                }
+            if (isTPrime(x)) {
+                output.append("YES\n");
             } else {
-                police += event;
+                output.append("NO\n");
             }
         }
 
-        System.out.println(untreated);
+        System.out.print(output);
+    }
+
+    static boolean isTPrime(long x) {
+        // 1 is not T-prime
+        if (x < 4) {
+            return false;
+        }
+
+        long root = (long) Math.sqrt(x);
+
+        // Fix possible floating-point rounding
+        while ((root + 1) * (root + 1) <= x) {
+            root++;
+        }
+
+        while (root * root > x) {
+            root--;
+        }
+
+        // x must be a perfect square
+        if (root * root != x) {
+            return false;
+        }
+
+        // root must be prime
+        return isPrime(root);
+    }
+
+    static boolean isPrime(long x) {
+        if (x < 2) {
+            return false;
+        }
+
+        if (x % 2 == 0) {
+            return x == 2;
+        }
+
+        for (long i = 3; i * i <= x; i += 2) {
+            if (x % i == 0) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
